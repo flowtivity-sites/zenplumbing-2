@@ -1,0 +1,159 @@
+{
+  "version": "1.0",
+  "businessName": "Zen Plumbing",
+  "slug": "zenplumbing-2",
+  "category": "trades",
+  "designDirection": {
+    "aesthetic": "Industrial/utilitarian",
+    "displayFont": "Archivo Black",
+    "bodyFont": "DM Sans",
+    "palette": {
+      "primary": "#1a2634",
+      "accent": "#ff6b35",
+      "surface": "#f8fafc",
+      "text": "#1a2634",
+      "textMuted": "#64748b"
+    },
+    "effects": [
+      "Grain texture",
+      "Geometric shapes",
+      "Bold lines",
+      "High contrast"
+    ]
+  },
+  "stories": [
+    {
+      "id": 1,
+      "title": "Project setup: Astro + Tailwind, Cloudflare config",
+      "description": "Initialize an Astro project with Tailwind CSS, configured for Cloudflare Pages deployment",
+      "acceptanceCriteria": [
+        "Astro project initialized with TypeScript",
+        "Tailwind CSS configured and working",
+        "npm run build succeeds without errors",
+        "wrangler.toml configured for Cloudflare Pages"
+      ],
+      "passes": false
+    },
+    {
+      "id": 2,
+      "title": "Homepage: hero, services grid, trust signals, CTA",
+      "description": "Build the homepage with all sections from scraped content including hero, services overview, trust signals, and call-to-action",
+      "acceptanceCriteria": [
+        "Hero section with business name and tagline",
+        "Services grid showing main offerings",
+        "Trust signals section (reviews, certifications, experience)",
+        "Clear call-to-action buttons",
+        "All content from content/pages.json used"
+      ],
+      "passes": false
+    },
+    {
+      "id": 3,
+      "title": "Services page",
+      "description": "Create a dedicated services page with detailed information about each service offering",
+      "acceptanceCriteria": [
+        "All services from content/services.json displayed",
+        "Each service has name, description, and features",
+        "Consistent styling with homepage",
+        "Navigation to individual service details"
+      ],
+      "passes": false
+    },
+    {
+      "id": 4,
+      "title": "About page",
+      "description": "Build the about page with business story, team information, and values",
+      "acceptanceCriteria": [
+        "Business story section from content/about.json",
+        "Team member profiles if available",
+        "Company values or mission statement",
+        "Professional imagery"
+      ],
+      "passes": false
+    },
+    {
+      "id": 5,
+      "title": "Contact page: form, map, details",
+      "description": "Create contact page with working form, embedded map, and contact details",
+      "acceptanceCriteria": [
+        "Contact form with name, email, phone, message fields",
+        "Form submits to Formspree or similar service",
+        "Google Maps embed with business location",
+        "Phone, email, address, hours displayed"
+      ],
+      "passes": false
+    },
+    {
+      "id": 6,
+      "title": "Design system: Apply vertical aesthetic",
+      "description": "Implement the design system specific to the business vertical with distinctive typography, colors, and styling",
+      "acceptanceCriteria": [
+        "Display font and body font from design direction applied",
+        "Color palette implemented as CSS variables",
+        "Distinctive aesthetic - NOT generic (no Inter, Roboto)",
+        "Visual style matches the business vertical"
+      ],
+      "passes": false
+    },
+    {
+      "id": 7,
+      "title": "Motion & polish",
+      "description": "Add animations and polish including page load reveals, hover states, and smooth scrolling",
+      "acceptanceCriteria": [
+        "Staggered page load animations",
+        "Hover effects on interactive elements",
+        "Smooth scroll behavior",
+        "Respects prefers-reduced-motion"
+      ],
+      "passes": false
+    },
+    {
+      "id": 8,
+      "title": "AEO: LocalBusiness schema, meta tags, FAQ",
+      "description": "Implement Answer Engine Optimization with structured data, meta tags, and FAQ section",
+      "acceptanceCriteria": [
+        "LocalBusiness JSON-LD schema with all business details",
+        "Meta title and description optimized for local search",
+        "FAQ section with 3-5 common questions",
+        "Schema validates at schema.org validator"
+      ],
+      "passes": false
+    },
+    {
+      "id": 9,
+      "title": "Mobile responsive",
+      "description": "Ensure the site is fully responsive on mobile devices",
+      "acceptanceCriteria": [
+        "No horizontal scroll at 375px width",
+        "Touch-friendly button sizes (min 44px)",
+        "Readable text without zooming",
+        "Mobile navigation works correctly"
+      ],
+      "passes": false
+    },
+    {
+      "id": 10,
+      "title": "Performance: compress, lazy load, minify",
+      "description": "Optimize performance with image compression, lazy loading, and asset minification",
+      "acceptanceCriteria": [
+        "Lighthouse Performance score > 90",
+        "Images optimized and lazy loaded",
+        "CSS and JS minified in production",
+        "No render-blocking resources"
+      ],
+      "passes": false
+    },
+    {
+      "id": 11,
+      "title": "Deploy to Cloudflare Pages",
+      "description": "Deploy the completed site to Cloudflare Pages",
+      "acceptanceCriteria": [
+        "Site deployed successfully",
+        "Preview URL accessible",
+        "HTTPS working",
+        "Loads in under 3 seconds"
+      ],
+      "passes": false
+    }
+  ]
+}
